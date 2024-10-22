@@ -44,8 +44,8 @@ This buildpack downloads and extracts the
 
 ## Features <a name = "feature"></a>
 - Downloads wkhtmltopdf binaries from [wkhtmltopdf.org](http://wkhtmltopdf.org)
-- It doesnot add new environment variables or shell scripts.
-- Tested on `heroku-24`, `heroku-22`, `heroku-20` and `heroku-18`stack images.
+- It does not add new environment variables or shell scripts.
+- Tested on `heroku-24`, `heroku-22`, `heroku-20` and `heroku-18` stack images.
 - It allows you to specify a custom or the latest version of wkhtmltopdf package for your app on Heroku. [Aptfile](#aptfile).
 
 ## Getting Started <a name = "getting_started"></a>
@@ -61,7 +61,7 @@ You can also force this buildpack to be the first Heroku process by using the
 ```bash
 heroku buildpacks:add --index=1 https://github.com/RohanDebroy/heroku-buildpack-wkhtmltopdf.git
 ```
-### Aptfile(Optional) <a name="aptfile"></a>
+### Aptfile (optional) <a name="aptfile"></a>
 To use a specific version of the wkhtmltopdf binary for your app on Heroku, you can include an `Aptfile` in the parent directory of your app. This file should contain the latest or custom download URL for the binary.
 
 By including the `Aptfile`, you can bypass Heroku's stack detection and ensure that the correct version of wkhtmltopdf is downloaded during the build process.
@@ -79,7 +79,7 @@ Here are the steps to include an Aptfile in your app:
 ## Usage <a name="usage"></a>
 
 The binaries `wkhtmltopdf` and `wkhtmltoimage` will be available on `/app/bin`,
-you can just execute `/app/bin/wkhtmltopdf ` and `/app/bin/wkhtmltoimage`  from your app.
+you can just execute `/app/bin/wkhtmltopdf` and `/app/bin/wkhtmltoimage`  from your app.
 
 
 ## Acknowledgements <a name = "acknowledgement"></a>
